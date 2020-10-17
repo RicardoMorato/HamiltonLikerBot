@@ -7,7 +7,7 @@ auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
 user = api.me()
 
-keyword = 'Python'
+keyword = 'Hamilton'
 numbers_of_tweets = 5
 
 for tweet in tweepy.Cursor(api.search, keyword).items(numbers_of_tweets):
